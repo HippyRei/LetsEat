@@ -23,4 +23,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile files ('json-simple-1.1.1.jar')
+    compile files ('jcommander-1.4.8.jar')
+    compile files ('scribe-1.3.7.jar')
 }
