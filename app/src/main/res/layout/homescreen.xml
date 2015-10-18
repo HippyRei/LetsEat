@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C498"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="112dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="141dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Let&apos;s Eat!"
+            android:id="@+id/title"
+            android:textIsSelectable="false"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:layout_weight="0.52"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="How many people?"
+            android:id="@+id/numPeopleText"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_weight="3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/numPeopleBox"
+            android:layout_weight=".5"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/walkButton"
+                android:src="@drawable/walk"
+                android:scaleType="fitXY"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/driveButton"
+                android:src="@drawable/car"
+                android:scaleType="fitXY"
+                android:padding="9dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="183dp"
+            android:layout_height="60dp"
+            android:text="Delivery"
+            android:id="@+id/delivButton"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.03"
+        android:gravity="bottom"
+        android:paddingBottom="37dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:id="@+id/submitButton"
+            android:background="#ffffff"
+            android:textSize="25dp"
+            android:layout_weight="0.18" />
+    </LinearLayout>
+
+</LinearLayout>
